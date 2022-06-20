@@ -116,7 +116,7 @@ function highlights(color) {
 }
 
 let btn = document.createElement("button");
-btn.innerHTML = "Highlight";
+btn.innerHTML = '<span class="Highlight">$1</span>';
 btn.onclick = function () {
     if (enable2 == 1) {
         highlights("yellow");
