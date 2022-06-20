@@ -1,5 +1,6 @@
 let butn = document.createElement("button");
-butn.innerHTML = "Colorize";
+butn.classList.add('colorize');
+butn.innerHTML = '<span class="color">Colorize</span>';
 var enable = 1;
 var enable2 = 1;
 butn.onclick = function() {
@@ -116,7 +117,8 @@ function highlights(color) {
 }
 
 let btn = document.createElement("button");
-btn.innerHTML = '<span class="Highlight">$1</span>';
+btn.classList.add('highlight');
+btn.innerHTML = '<span class="high">Highlight</span>';
 btn.onclick = function () {
     if (enable2 == 1) {
         highlights("yellow");
