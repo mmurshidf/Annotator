@@ -3,6 +3,10 @@ butn.classList.add('colorize');
 butn.innerHTML = '<span class="color">Colorize</span>';
 var enable = 1;
 var enable2 = 1;
+var enable3 = 1;
+var enable4 = 1;
+var enable5 = 1;
+var enable6 = 1;
 butn.onclick = function() {
     if (enable == 1) {
         colorize();
@@ -129,3 +133,59 @@ btn.onclick = function () {
     }
 };
 document.body.appendChild(btn);
+
+let btn2 = document.createElement("button");
+btn2.classList.add('highlight2');
+btn2.innerHTML = '<span class="high2">Highlight</span>';
+btn2.onclick = function () {
+    if (enable3 == 1) {
+        highlights("#ff5349");
+        enable3 -= 1;
+    } else {
+        enable3 += 1;
+        highlights("Transparent");
+    }
+};
+document.body.appendChild(btn2);
+
+let btn3 = document.createElement("button");
+btn3.classList.add('highlight3');
+btn3.innerHTML = '<span class="high3">Highlight</span>';
+btn3.onclick = function () {
+    if (enable4 == 1) {
+        highlights("#ffadd2");
+        enable4 -= 1;
+    } else {
+        enable4 += 1;
+        highlights("Transparent");
+    }
+};
+document.body.appendChild(btn3);
+
+let btn4 = document.createElement("button");
+btn4.classList.add('highlight4');
+btn4.innerHTML = '<span class="high4">Highlight</span>';
+btn4.onclick = function () {
+    if (enable5 == 1) {
+        highlights("cyan");
+        enable5 -= 1;
+    } else {
+        enable5 += 1;
+        highlights("Transparent");
+    }
+};
+document.body.appendChild(btn4);
+
+let btn5 = document.createElement("button");
+btn5.classList.add('highlight5');
+btn5.innerHTML = '<span class="high5">Highlight</span>';
+btn5.onclick = function () {
+    if (enable6 == 1) {
+        highlights("#90ee90");
+        enable6 -= 1;
+    } else {
+        enable6 += 1;
+        highlights("Transparent");
+    }
+};
+document.body.appendChild(btn5);

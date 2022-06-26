@@ -10,13 +10,67 @@
 .high {
    color: black;
 }
-.colorize {
+
+.highlight2 {
    position: fixed;
    bottom: 32px;
    right:0;
    border-radius: 8px;
    border-color: black;
-   background-color: aqua;
+   background-color: #ff5349;
+   padding: 5px;
+}
+.high2 {
+   color: black;
+}
+
+.highlight3 {
+   position: fixed;
+   bottom: 64px;
+   right:0;
+   border-radius: 8px;
+   border-color: black;
+   background-color: #ffadd2;
+   padding: 5px;
+}
+.high3 {
+   color: black;
+}
+
+.highlight4 {
+   position: fixed;
+   bottom: 96px;
+   right:0;
+   border-radius: 8px;
+   border-color: black;
+   background-color: cyan;
+   padding: 5px;
+}
+.high4 {
+   color: black;
+}
+
+.highlight5 {
+   position: fixed;
+   bottom: 128px;
+   right:0;
+   border-radius: 8px;
+   border-color: black;
+   background-color: #90ee90;
+   padding: 5px;
+}
+.high5 {
+   color: black;
+}
+
+
+.colorize {
+   position: fixed;
+   bottom: 160px;
+   right:0;
+   border-radius: 8px;
+   border-color: black;
+   background-color: #FFE5B4;
    padding: 5px;
 }
 .color {
