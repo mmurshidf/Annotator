@@ -29,6 +29,8 @@ const li = document.getElementsByTagName("li")
 const a = document.getElementsByTagName("a")
 const q = document.getElementsByTagName("q")
 const span = document.getElementsByTagName("span")
+const em = document.getElementsByTagName("em")
+const cite = document.getElementsByTagName("cite")
 
 function colorize() {
     for (var i=0; i < h1.length; i++) {
@@ -63,6 +65,12 @@ function colorize() {
     }
     for (var i=0; i < span.length; i++) {
         span[i].style.color = "rgb(3,186,141)";
+    }
+    for (var i=0; i < em.length; i++) {
+        em[i].style.color = "rgb(3,186,141)";
+    }
+    for (var i=0; i < cite.length; i++) {
+        cite[i].style.color = "#FFE5B4";
     }
 }
 
@@ -99,6 +107,12 @@ function decolorize() {
     }
     for (var i=0; i < span.length; i++) {
         span[i].style.color = "black";
+    }
+    for (var i=0; i < em.length; i++) {
+        em[i].style.color = "black";
+    }
+    for (var i=0; i < cite.length; i++) {
+        cite[i].style.color = "black";
     }
 }
 
