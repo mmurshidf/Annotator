@@ -7,6 +7,7 @@ var enable3 = 1;
 var enable4 = 1;
 var enable5 = 1;
 var enable6 = 1;
+var enable7 = 1;
 butn.onclick = function() {
     if (enable == 1) {
         colorize();
@@ -203,3 +204,48 @@ btn5.onclick = function () {
     }
 };
 document.body.appendChild(btn5);
+
+chrome.runtime.onMessage.addListener(gotMessage);
+
+function gotMessage(message, sender, sendresponse) {
+    if (message.txt === "click") {
+        let button = document.getElementsByTagName('button');
+        let color = document.getElementsByClassName('colorize');
+        let highlight = document.getElementsByClassName('highlight');
+        let highlight2 = document.getElementsByClassName('highlight2');
+        let highlight3 = document.getElementsByClassName('highlight3');
+        let highlight4 = document.getElementsByClassName('highlight4');
+        let highlight5 = document.getElementsByClassName('highlight5');
+        if (enable7 != 1) {
+            for (elt of color) {
+                elt.innerHTML = "Colorize";
+                enable7 = 1;
+            }
+            for (elt of highlight) {
+                elt.innerHTML = "Highlight";
+                enable7 = 1;
+            }
+            for (elt of highlight2) {
+                elt.innerHTML = "Highlight";
+                enable7 = 1;
+            }
+            for (elt of highlight3) {
+                elt.innerHTML = "Highlight";
+                enable7 = 1;
+            }
+            for (elt of highlight4) {
+                elt.innerHTML = "Highlight";
+                enable7 = 1;
+            }
+            for (elt of highlight5) {
+                elt.innerHTML = "Highlight";
+                enable7 = 1;
+            }
+        } else {
+            for (elt of button) {
+                elt.innerHTML = "";
+                enable7 += 1;
+        }
+    }
+}
+}
